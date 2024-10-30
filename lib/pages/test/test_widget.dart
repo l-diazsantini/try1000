@@ -204,6 +204,30 @@ class _TestWidgetState extends State<TestWidget> {
                                       letterSpacing: 0.0,
                                     ),
                               ),
+                              Text(
+                                valueOrDefault<String>(
+                                  FFAppState().xaxis.first.toString(),
+                                  '---',
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Montserrat',
+                                      letterSpacing: 0.0,
+                                    ),
+                              ),
+                              Text(
+                                valueOrDefault<String>(
+                                  FFAppState().yaxis.first.toString(),
+                                  '---',
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Montserrat',
+                                      letterSpacing: 0.0,
+                                    ),
+                              ),
                             ],
                           ),
                         ),
